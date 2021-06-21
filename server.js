@@ -11,7 +11,6 @@ app.get("/", (req, res) => {
   res.send("index.html");
 });
 
-
 // A method to return a JSON object with the key “return_string” and a string containing every third letter from the original string
 // (e.g.) If you POST {"string_to_cut": "iamyourlyftdriver"}, it will return: {"return_string": "muydv"}.
 // assumption: 
@@ -33,7 +32,9 @@ app.post("/test", (req, res) => {
   if (string_to_cut.length >= 3) {
     res.send(`
     <html>
-      <head><link rel="stylesheet" href="style.css"></head>
+      <head>
+        <link rel="stylesheet" href="style.css">
+      </head>
       <body class="result">
           <h2>Result: </h2>
           <h2>{"return_string": ${JSON.stringify(cut_string(string_to_cut))} }</h2>
