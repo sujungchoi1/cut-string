@@ -38,6 +38,7 @@ app.post("/test", (req, res) => {
       <body class="result">
           <h2>Result: </h2>
           <h2>{"return_string": ${JSON.stringify(cut_string(string_to_cut))} }</h2>
+          <a href="/"><button>BACK</button></a>
       </body>
     </html>
     `
