@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Test Page</title>
 </head>
-<body>
-    <h1>Enter a string!</h1>
-    <h3>(e.g.) If you POST {"string_to_cut": "iamyourlyftdriver"}, it will return: {"return_string": "muydv"}</h2>
-    <div class="main">
-        <form action="/test" method="post">
-            
-            <div class="input">
-                <label>{ "string_to_cut": </label>
-                <input id="string_to_cut" name="string_to_cut" /> 
-                <span>}</span>
+    <body>
+        <h1>Enter a string!</h1>
+        <h3>(e.g.) If you POST {"string_to_cut": "iamyourlyftdriver"}, it will return: {"return_string": "muydv"}</h2>
+            <div class="main">
+                <form action="/test" method="post">
+                    <div class="input">
+                        <label>{ "string_to_cut": </label>
+                        <input id="string_to_cut" name="string_to_cut" />
+                        <span>}</span>
+                    </div>
+                    <button type="submit">SUBMIT</button>
+                </form>
             </div>
-            <button type="submit">SUBMIT</button>
-        </form>
-    </div>
-  </body>
+    </body>
 </html>

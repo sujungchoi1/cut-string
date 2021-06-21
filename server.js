@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
 
 function cut_string(str) {
   let return_string = "";
-  for (let i = 2; i < str.length; i+=3) {
+  for (let i = 2; i < str.length; i += 3) {
     return_string += str[i];
   }
   return return_string;
@@ -41,13 +41,12 @@ app.post("/test", (req, res) => {
     </html>
     `
     );
-  } else if (!string_to_cut){
-    res.status(400).send({error: "The key 'string_to_cut' doesn't exist in your argument"})
-  } 
-  else {
-    res.status(400).send({error: "Please enter more than 3 characters!"})
+  } else if (!string_to_cut) {
+    res.status(400).send({ error: "The key 'string_to_cut' doesn't exist in your argument" })
   }
-
+  else {
+    res.status(400).send({ error: "Please enter more than 3 characters!" })
+  }
 });
 
 
